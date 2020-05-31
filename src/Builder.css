@@ -1,0 +1,23 @@
+.builder {
+}
+
+.items-list-wrapper {
+  display: grid;
+   grid-template-areas: 
+    "header header"
+    "data builder";
+
+    grid-template-columns: repeat(2, minmax(min-content, 50%));
+}
+
+.items-list-wrapper h2 {
+  grid-area: header;
+}
+
+.items-list-data {
+  grid-area: data;
+}
+
+.items {
+  grid-area: builder;
+}
